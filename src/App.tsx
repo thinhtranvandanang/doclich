@@ -1,7 +1,6 @@
 import React, { useMemo, useRef, useState } from 'react';
 import {
   Check,
-  Code2,
   Copy,
   Download,
   FileSpreadsheet,
@@ -297,28 +296,6 @@ export default function App() {
             >
               Xem trước lịch
             </button>
-            <button
-              type="button"
-              onClick={() => setActiveTab('python')}
-              className={`py-5 border-b-2 transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
-                activeTab === 'python'
-                  ? 'border-blue-700 text-slate-900'
-                  : 'border-transparent text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Mã nguồn Python
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveTab('architecture')}
-              className={`py-5 border-b-2 transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
-                activeTab === 'architecture'
-                  ? 'border-blue-700 text-slate-900'
-                  : 'border-transparent text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Cơ chế quét động
-            </button>
           </nav>
 
           {/* Zone 3: Single primary CTA */}
@@ -340,8 +317,6 @@ export default function App() {
             [
               ['processor', 'Xử lý Excel'],
               ['preview', 'Xem trước'],
-              ['python', 'Python Tkinter'],
-              ['architecture', 'Quét động'],
             ] as const
           ).map(([id, label]) => (
             <button
@@ -428,14 +403,6 @@ export default function App() {
                     className="px-3.5 py-2 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer disabled:opacity-50"
                   >
                     Thử mẫu 21 tuần (SE2102)
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setActiveTab('python')}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer"
-                  >
-                    <Code2 className="w-4 h-4" />
-                    Lấy mã nguồn Python Tkinter
                   </button>
                 </div>
               </div>
