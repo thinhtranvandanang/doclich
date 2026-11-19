@@ -1,0 +1,6 @@
+{
+  "name": "Schedule Splitter Studio",
+  "description": "Công cụ tự động quét động và bóc tách thời khóa biểu Excel theo từng môn học kèm mã nguồn Python Tkinter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
